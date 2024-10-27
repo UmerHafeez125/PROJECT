@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     roomsSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -116,6 +117,3 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(overviewPhoto);
   }
 });
-
-
-

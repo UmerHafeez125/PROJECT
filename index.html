@@ -84,3 +84,66 @@
       </div>
     </div>
   </section>
+  <section class="booking-section">
+    <div class="booking-container">
+      <h2 class="section-title">Book Your Stay</h2>
+      <div class="booking-form">
+        <form id="booking-form">
+          <div class="form-group">
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+          </div>
+          <div class="form-group">
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+          <button type="submit" class="book-now-btn">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-policies">
+    <div class="policies-container">
+      <h2 class="policies-title">Booking Policies</h2>
+      <div class="policies-grid">
+        <div class="policy-card">
+          <div class="policy-icon">📅</div>
+          <h3 class="policy-title">Check-in / Check-out</h3>
+          <p class="policy-description">Check-in time: 3:00 PM<br>Check-out time: 11:00 AM</p>
+        </div>
+        <div class="policy-card">
+          <div class="policy-icon">🔄</div>
+          <h3 class="policy-title">Cancellation Policy</h3>
+          <p class="policy-description">Free cancellation up to 48 hours before check-in. Cancellations made within 48 hours of check-in are subject to a one-night charge.</p>
+        </div>
+        <div class="policy-card">
+          <div class="policy-icon">💳</div>
+          <h3 class="policy-title">Payment</h3>
+          <p class="policy-description">We accept all major credit cards. A valid credit card is required to guarantee your reservation.</p>
+        </div>
+        <div class="policy-card">
+          <div class="policy-icon">🎁</div>
+          <h3 class="policy-title">Special Requests</h3>
+          <p class="policy-description">Please note that special requests cannot be guaranteed but we will do our best to meet your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
