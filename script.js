@@ -117,3 +117,36 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(overviewPhoto);
   }
 });
+
+// Newsletter form submission
+document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = this.querySelector('.newsletter-input').value;
+  
+  // Add your newsletter subscription logic here
+  console.log('Newsletter subscription for:', email);
+  
+  // Example success message (you should replace this with proper form handling)
+  alert('Thank you for subscribing to our newsletter!');
+  this.reset();
+});
+
+// Intersection Observer for footer sections animation
+const footerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      footerObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+document.querySelectorAll('.footer-section').forEach(section => {
+  section.style.opacity = '0';
+  section.style.transform = 'translateY(20px)';
+  footerObserver.observe(section);
+});

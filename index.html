@@ -86,37 +86,35 @@
   </section>
   <section class="booking-section">
     <div class="booking-container">
-      <h2 class="section-title">Book Your Stay</h2>
-      <div class="booking-form">
-        <form id="booking-form">
-          <div class="form-group">
-            <label for="check-in">Check-in Date:</label>
-            <input type="date" id="check-in" name="check-in" required>
-          </div>
-          <div class="form-group">
-            <label for="check-out">Check-out Date:</label>
-            <input type="date" id="check-out" name="check-out" required>
-          </div>
-          <div class="form-group">
-            <label for="guests">Number of Guests:</label>
-            <select id="guests" name="guests" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="room-type">Room Type:</label>
-            <select id="room-type" name="room-type" required>
-              <option value="standard">Standard Room</option>
-              <option value="deluxe">Deluxe Room</option>
-              <option value="suite">Suite</option>
-            </select>
-          </div>
-          <button type="submit" class="book-now-btn">Book Now</button>
-        </form>
-      </div>
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="check-in">Check-in Date</label>
+          <input type="date" id="check-in" required>
+        </div>
+        <div class="form-group">
+          <label for="check-out">Check-out Date</label>
+          <input type="date" id="check-out" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <select id="guests" required>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="room-type">Room Type</label>
+          <select id="room-type" required>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+            <option value="presidential">Presidential Suite</option>
+          </select>
+        </div>
+        <button type="submit" class="book-now-btn">Book Now</button>
+      </form>
     </div>
   </section>
 
@@ -125,25 +123,105 @@
       <h2 class="policies-title">Booking Policies</h2>
       <div class="policies-grid">
         <div class="policy-card">
-          <div class="policy-icon">📅</div>
-          <h3 class="policy-title">Check-in / Check-out</h3>
-          <p class="policy-description">Check-in time: 3:00 PM<br>Check-out time: 11:00 AM</p>
+          <i class="policy-icon fas fa-clock"></i>
+          <h3 class="policy-title">Check-in/Check-out</h3>
+          <p class="policy-description">Check-in time starts at 3 PM. Check-out time is 11 AM. Early check-in and late check-out available upon request.</p>
         </div>
+        
         <div class="policy-card">
-          <div class="policy-icon">🔄</div>
+          <i class="policy-icon fas fa-ban"></i>
           <h3 class="policy-title">Cancellation Policy</h3>
-          <p class="policy-description">Free cancellation up to 48 hours before check-in. Cancellations made within 48 hours of check-in are subject to a one-night charge.</p>
+          <p class="policy-description">Free cancellation up to 48 hours before check-in. Cancellations within 48 hours may incur charges.</p>
         </div>
+        
         <div class="policy-card">
-          <div class="policy-icon">💳</div>
-          <h3 class="policy-title">Payment</h3>
-          <p class="policy-description">We accept all major credit cards. A valid credit card is required to guarantee your reservation.</p>
-        </div>
-        <div class="policy-card">
-          <div class="policy-icon">🎁</div>
-          <h3 class="policy-title">Special Requests</h3>
-          <p class="policy-description">Please note that special requests cannot be guaranteed but we will do our best to meet your needs.</p>
+          <i class="policy-icon fas fa-child"></i>
+          <h3 class="policy-title">Children Policy</h3>
+          <p class="policy-description">Children under 12 stay free when using existing bedding. Additional charges may apply for extra bedding.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <div class="footer-logo">Luxury Hotel</div>
+          <p class="footer-description">
+            Experience luxury and comfort at its finest. Our hotel offers exceptional service and unforgettable stays for our valued guests.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Our Rooms</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Dining</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Spa & Wellness</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Special Offers</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Luxury Avenue, Beverly Hills, CA 90210</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@luxuryhotel.com</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>24/7 - Always Open</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="footer-description">
+            Subscribe to our newsletter for special offers and updates.
+          </p>
+          <form class="newsletter-form">
+            <input 
+              type="email" 
+              class="newsletter-input" 
+              placeholder="Enter your email"
+              required
+            >
+            <button type="submit" class="newsletter-btn">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Luxury Hotel. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #4a90e2;"></i> by <a href="#">UMER HAFEEZ
+        </a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
